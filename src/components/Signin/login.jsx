@@ -39,7 +39,7 @@ export class Login extends React.Component {
     })
       .then(Response => Response.json())
       .then((data) => {
-        //adding Token To the Local Storage : 
+        //adding Token Toee the Local Storage : 
         localStorage.setItem('User', data.User._id)
         localStorage.setItem('type', data.User.type)
         localStorage.setItem('Token', data.token)
